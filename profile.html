@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta name="description" content="description goes here" />
+    <meta name="keywords" content="keywords go here" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Profile</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="h1-menu">
+        <a href="" class="logo"><img src="./img/logo.png" alt="" /></a>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+
+      <div class="h2-menu">
+        <ul class="menu">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about-us.html">about us</a></li>
+          <li><a href="./student-polls.html">student polls</a></li>
+          <li><a href="./networking.html">networking</a></li>
+          <li><a href="./help.html">help</a></li>
+
+          <li class="hide-desktop"><a href="./profile.html">profile</a></li>
+          <li class="hide-desktop"><a href="./login.html">log in</a></li>
+          <li class="hide-desktop"><a href="./signup.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="h3-menu">
+        <ul class="menu hide-mobile">
+          <li><a href="./profile.html">profile</a></li>
+          <li><a href="./login.html">log in</a></li>
+          <li><a href="./signup.html" class="btn btn-signup">sign up</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="small2-section">
+      <div class="title">
+        <h3>Profile</h3>
+      </div>
+    </section>
+
+    <section id="profile">
+      <div class="container">
+        <div class="profile-inner">
+          <div class="profile-menu">
+            <div>
+              <div class="img-profile">
+                <img src="C:\Users\ECham\Desktop\Completed Project\img\profile\img-profile.png" alt="" />
+                <a href="" class="position-icon"><i class="fas fa-edit"></i></a>
+              </div>
+
+              <div class="af-profile">
+                <h5>Carl Stevens</h5>
+                <h6>carl_stev28</h6>
+                <ul class="profile-btns">
+                  <li><a href="">profile</a></li>
+                  <li><a href="">settings</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile-info">
+            <div class="info-boxes">
+              <h3>basic information</h3>
+              <div>
+                <label for="fname">first name</label>
+                <input
+                  type="text"
+                  name="fname"
+                  id="fname"
+                  placeholder="First Name"
+                  class="input-sec"
+                  value="Carl"
+                />
+              </div>
+              <div>
+                <label for="lname">last name</label>
+                <input
+                  type="text"
+                  name="lname"
+                  id="lname"
+                  placeholder="Lastt Name"
+                  class="input-sec"
+                  value="Stevens"
+                />
+              </div>
+              <div>
+                <label for="email">email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="email"
+                  class="input-sec"
+                  value="carl-stevens@gmail.com"
+                />
+              </div>
+            </div>
+            <div class="info-boxes">
+              <h3>additional information</h3>
+              <div>
+                <label for="gender-box">gender</label>
+                <div class="gender-box" id="gender-box">
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male"
+                    checked
+                  />
+                  <label for="male">male</label>
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female"
+                  />
+                  <label for="female">female</label>
+                </div>
+              </div>
+              <div>
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Address"
+                  class="input-sec"
+                />
+              </div>
+              <div>
+                <label for="phone">phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="123-445-6784"
+                  class="input-sec numbers"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="info-boxes">
+              <h3>password</h3>
+              <div>
+                <label for="cpassword">current password</label>
+                <input
+                  type="password"
+                  name="cpassword"
+                  id="cpassword"
+                  placeholder="Current password"
+                  class="input-sec"
+                />
+              </div>
+              <div>
+                <label for="naddress">new password</label>
+                <input
+                  type="password"
+                  name="naddress"
+                  id="naddress"
+                  placeholder="New Password"
+                  class="input-sec"
+                />
+              </div>
+              <div>
+                <label for="rnpassword">retype new password</label>
+                <input
+                  type="password"
+                  name="rnpassword"
+                  id="rnpassword"
+                  placeholder="Retype new password"
+                  class="input-sec"
+                />
+              </div>
+            </div>
+
+            <div class="profile-take-action">
+              <ul>
+                <li><a href="" class="btn-ta btn-cancel">cancel</a></li>
+                <li><a href="" class="btn-ta btn-save">Save</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flexed-box">
+          <div class="footer-box1">
+            <p class="footer-box1-p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about-us.html">about us</a></li>
+              <li><a href="./student-polls.html">student polls</a></li>
+              <li><a href="./networking.html">networking</a></li>
+              <li><a href="./help.html">help</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./profile.html">profile</a></li>
+              <li><a href="./login.html">log in</a></li>
+              <li><a href="./signup.html">sign up</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul class="social-media-list">
+              <li class="list-title">social media</li>
+              <li>
+                <ul>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="separator">
+          <hr />
+        </div>
+        <div class="flexed-box">
+          <div class="footer-box1"><p>© 2022 All rights reserved.</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

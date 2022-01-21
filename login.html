@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta name="description" content="description goes here" />
+    <meta name="keywords" content="keywords go here" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Log In</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="h1-menu">
+        <a href="" class="logo"><img src="./img/logo.png" alt="" /></a>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+
+      <div class="h2-menu">
+        <ul class="menu">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about-us.html">about us</a></li>
+          <li><a href="./student-polls.html">student polls</a></li>
+          <li><a href="./networking.html">networking</a></li>
+          <li><a href="./help.html">help</a></li>
+
+          <li class="hide-desktop"><a href="./profile.html">profile</a></li>
+          <li class="hide-desktop"><a href="./login.html">log in</a></li>
+          <li class="hide-desktop"><a href="./signup.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="h3-menu">
+        <ul class="menu hide-mobile">
+          <li><a href="./profile.html">profile</a></li>
+          <li><a href="./login.html">log in</a></li>
+          <li><a href="./signup.html" class="btn btn-signup">sign up</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="small2-section">
+      <div class="title">
+        <h3>log In</h3>
+      </div>
+    </section>
+
+    <section id="small-section">
+      <div class="container">
+        <div class="one-box-form">
+          <div class="title-form">
+            <h4>Log In to your account</h4>
+          </div>
+          <form action="">
+            <div class="form-input-cstm">
+              <span class="icon"><i class="fas fa-envelope"></i></span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email ID"
+                class="input-sec padding-input"
+              />
+            </div>
+            <div class="form-input-cstm">
+              <span class="icon"><i class="fas fa-key"></i></span>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                class="input-sec padding-input"
+              />
+            </div>
+            <div class="flexed-box-form">
+              <div class="form-flex1">
+                <input
+                  type="checkbox"
+                  id="vehicle1"
+                  name="vehicle1"
+                  value="Bike"
+                />
+                <label for="vehicle1"> Remember me</label>
+              </div>
+              <div class="form-flex1">
+                <a href="">Forgot password?</a>
+              </div>
+            </div>
+
+            <input type="submit" class="btn-form" value="LOGIN" />
+          </form>
+
+          <div class="alt-log">
+            <p>or Log In with</p>
+            <ul>
+              <li>
+                <a href=""><i class="fab fa-facebook-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-google-plus-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter-square"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="alt-log">
+            <p>or Sign Up</p>
+            <a href="./signup.html" class="sign-up-link">sign up</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flexed-box">
+          <div class="footer-box1">
+            <p class="footer-box1-p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about-us.html">about us</a></li>
+              <li><a href="./student-polls.html">student polls</a></li>
+              <li><a href="./networking.html">networking</a></li>
+              <li><a href="./help.html">help</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./profile.html">profile</a></li>
+              <li><a href="./login.html">log in</a></li>
+              <li><a href="./signup.html">sign up</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul class="social-media-list">
+              <li class="list-title">social media</li>
+              <li>
+                <ul>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="separator">
+          <hr />
+        </div>
+        <div class="flexed-box">
+          <div class="footer-box1"><p>© 2022 All rights reserved.</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

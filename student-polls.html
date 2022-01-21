@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta name="description" content="description goes here" />
+    <meta name="keywords" content="keywords go here" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Polls</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="h1-menu">
+        <a href="" class="logo"><img src="./img/logo.png" alt="" /></a>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+
+      <div class="h2-menu">
+        <ul class="menu">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about-us.html">about us</a></li>
+          <li><a href="./student-polls.html">student polls</a></li>
+          <li><a href="./networking.html">networking</a></li>
+          <li><a href="./help.html">help</a></li>
+
+          <li class="hide-desktop"><a href="./profile.html">profile</a></li>
+          <li class="hide-desktop"><a href="./login.html">log in</a></li>
+          <li class="hide-desktop"><a href="./signup.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="h3-menu">
+        <ul class="menu hide-mobile">
+          <li><a href="./profile.html">profile</a></li>
+          <li><a href="./login.html">log in</a></li>
+          <li><a href="./signup.html" class="btn btn-signup">sign up</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="small2-section">
+      <div class="title">
+        <h3>Polls</h3>
+      </div>
+    </section>
+
+    <section id="polls">
+      <div class="container">
+        <div class="polls-box">
+          <div class="polls-questions">
+            <div class="poll-question">
+              <h5>
+                What module in this course have you found the hardest so far?
+              </h5>
+
+              <div class="all-options">
+                <div>
+                  <input type="radio" name="module" id="module-wd" checked />
+                  <label for="module-wd">Web development</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="module" id="module-ps" />
+                  <label for="module-ps">Probability & Statistics</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="module" id="module-ipp" />
+                  <label for="module-ipp"
+                    >Introduction to python & programming</label
+                  >
+                </div>
+
+                <div>
+                  <input type="radio" name="module" id="module-ce" />
+                  <label for="module-ce">Career and employability</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="poll-question">
+              <h5>Do you prefer to work online or in person?</h5>
+              <div class="all-options">
+                <div>
+                  <input type="radio" name="work" id="work-online" checked />
+                  <label for="work-online">Online</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="work" id="work-inperson" />
+                  <label for="work-inperson">In Person</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="poll-question">
+              <h5>
+                Do you feel that this school is preparing you adequately for the
+                job market?
+              </h5>
+              <div class="all-options">
+                <div>
+                  <input
+                    type="radio"
+                    name="jobmarket"
+                    id="jobmarket-yes"
+                    checked
+                  />
+                  <label for="jobmarket-yes">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="jobmarket" id="jobmarket-no" />
+                  <label for="jobmarket-no">No</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="poll-question">
+              <h5>Are you satisfied with the quality of teaching?</h5>
+
+              <div class="all-options">
+                <div>
+                  <input
+                    type="radio"
+                    name="teaching"
+                    id="teaching-yes"
+                    checked
+                  />
+                  <label for="teaching-yes">Yes, I am</label>
+                </div>
+
+                <div>
+                  <input type="radio" name="teaching" id="teaching-no" />
+                  <label for="teaching-no">No, I am not</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="polls-result">
+            <input
+              type="submit"
+              class="btn-form"
+              onclick="myFunction()"
+              value="results"
+            />
+
+            <div id="result-box">
+              <h6>feedback polls</h6>
+
+              <div>
+                <div class="poll-each">
+                  <div class="poll-progress">
+                    <div class="poll-bar poll-bar-1">
+                      <p class="poll-percent">
+                        100% Found the lecturer helpful
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poll-each">
+                  <div class="poll-progress">
+                    <div class="poll-bar poll-bar-2">
+                      <p class="poll-percent">
+                        85% Undertand modules to a good capacity
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poll-each">
+                  <div class="poll-progress">
+                    <div class="poll-bar poll-bar-3">
+                      <p class="poll-percent">10% Find it easy</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="poll-each">
+                  <div class="poll-progress">
+                    <div class="poll-bar poll-bar-4">
+                      <p class="poll-percent">5% Clueless</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script></script>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flexed-box">
+          <div class="footer-box1">
+            <p class="footer-box1-p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about-us.html">about us</a></li>
+              <li><a href="./student-polls.html">student polls</a></li>
+              <li><a href="./networking.html">networking</a></li>
+              <li><a href="./help.html">help</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./profile.html">profile</a></li>
+              <li><a href="./login.html">log in</a></li>
+              <li><a href="./signup.html">sign up</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul class="social-media-list">
+              <li class="list-title">social media</li>
+              <li>
+                <ul>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="separator">
+          <hr />
+        </div>
+        <div class="flexed-box">
+          <div class="footer-box1"><p>© 2022 All rights reserved.</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>

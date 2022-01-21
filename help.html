@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- required meta tags -->
+    <meta charset="utf-8" />
+
+    <meta name="description" content="description goes here" />
+    <meta name="keywords" content="keywords go here" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- title -->
+    <title>Help</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="css/font-awesome.css" />
+
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    <script src="js/form.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="h1-menu">
+        <a href="" class="logo"><img src="./img/logo.png" alt="" /></a>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="navicon"></span>
+      </label>
+
+      <div class="h2-menu">
+        <ul class="menu">
+          <li><a href="./index.html">home</a></li>
+          <li><a href="./about-us.html">about us</a></li>
+          <li><a href="./student-polls.html">student polls</a></li>
+          <li><a href="./networking.html">networking</a></li>
+          <li><a href="./help.html">help</a></li>
+
+          <li class="hide-desktop"><a href="./profile.html">profile</a></li>
+          <li class="hide-desktop"><a href="./login.html">log in</a></li>
+          <li class="hide-desktop"><a href="./signup.html">sign up</a></li>
+        </ul>
+      </div>
+
+      <div class="h3-menu">
+        <ul class="menu hide-mobile">
+          <li><a href="./profile.html">profile</a></li>
+          <li><a href="./login.html">log in</a></li>
+          <li><a href="./signup.html" class="btn btn-signup">sign up</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section id="small2-section">
+      <div class="title">
+        <h3>Help</h3>
+      </div>
+    </section>
+
+    <section id="small-section">
+      <div class="container">
+        <div class="one-box-form one-box-form-help">
+          <div class="title-form">
+            <h4>Ask the lecturer</h4>
+          </div>
+
+          <div class="status-label">
+            <div id="success_message" style="display: none">
+              <h3>Sent successfully!</h3>
+            </div>
+            <div id="error_message" style="display: none">
+              <h3>Error sending, try again later!</h3>
+            </div>
+          </div>
+          <form role="form" method="post" id="reused_form">
+            <div class="form-input-cstm">
+              <label for="name">name</label>
+              <input
+                type="name"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="input-sec"
+              />
+            </div>
+            <div class="form-input-cstm">
+              <label for="email">email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="email"
+                class="input-sec"
+              />
+            </div>
+            <div class="form-input-cstm">
+              <label for="Module">Module</label>
+              <input
+                type="module"
+                name="module"
+                id="module"
+                placeholder="module"
+                class="input-sec"
+              />
+            </div>
+            <div class="form-input-cstm">
+              <label for="message">message</label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                class="input-sec message-sec"
+              ></textarea>
+            </div>
+
+            <input
+              type="submit"
+              id="send"
+              name="send"
+              class="btn-form"
+              value="Send"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="flexed-box">
+          <div class="footer-box1">
+            <p class="footer-box1-p">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./index.html">home</a></li>
+              <li><a href="./about-us.html">about us</a></li>
+              <li><a href="./student-polls.html">student polls</a></li>
+              <li><a href="./networking.html">networking</a></li>
+              <li><a href="./help.html">help</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul>
+              <li class="list-title">links</li>
+              <li><a href="./profile.html">profile</a></li>
+              <li><a href="./login.html">log in</a></li>
+              <li><a href="./signup.html">sign up</a></li>
+            </ul>
+          </div>
+          <div class="footer-box">
+            <ul class="social-media-list">
+              <li class="list-title">social media</li>
+              <li>
+                <ul>
+                  <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fab fa-instagram-square"></i></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="separator">
+          <hr />
+        </div>
+        <div class="flexed-box">
+          <div class="footer-box1"><p>© 2022 All rights reserved.</p></div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- custom JS -->
+    <script src="js/custom.js"></script>
+  </body>
+</html>
